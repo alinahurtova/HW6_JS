@@ -32,7 +32,16 @@ function sum(x) {
     }
 }
 
-var sum1 = sum(1);
+var sum1 = sum (1);
 
 console.log( sum1(2) );
 console.log( sum(1)(2) ); // git
+
+// =======================================
+
+var a = 5; // Не было точки с запятой.
+
+(function() {
+    alert(a);
+})();
+
