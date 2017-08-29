@@ -16,7 +16,7 @@ function time() {
     }
 }
 
-setInterval(time, 1000);
+setInterval(time, 500);
 
 function toggle() {
     format = !format;
@@ -24,3 +24,15 @@ function toggle() {
 
 clock.addEventListener("click", toggle);
 
+// =======================================
+
+function sum(x) {
+    return function(y) {
+        return x + y;
+    }
+}
+
+var sum1 = sum(1);
+
+console.log( sum1(2) );
+console.log( sum(1)(2) ); // git
